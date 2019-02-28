@@ -6,82 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Guessing Game</title>
-    <link rel="stylesheet" href="./assets/css/reset.css"/>
-    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
-    <div class="container">
+    <div>
 
         <div>
             <div>
                 <h1>Game Of Thrones - Name Guess</h1>
 
                 <div class="instructionDiv">
-                <h2>Guess the name of GOT characters...</h2>
-                <small>Click any letter to begin guessing. Choose wisely you have a limited amount of guesses.</small>
+                    <h2>Guess the name of GOT characters...</h2>
+                    <small>Click any letter to begin guessing. Choose wisely you have a limited amount of guesses... And
+                        winter is coming.</small>
                 </div>
             </div>
         </div>
 
-        <!-- Game counters held here. cards are being used to hold various sections. -->
         <div>
             <div>
 
-                <!-- First card: Holds the Word to Guess (blanks and guessed word). -->
-                <div>
+                <div class="characterDiv">
                     <div>
-                        <h3><strong>character</strong></h3>
+                        <h3><strong>character:</strong></h3>
                     </div>
 
                     <div>
 
-                        <!-- This h3 section called word-blanks is what we"ll be replacing with letters as the user guesses. Pay particular attention to the id called ***word-blanks***. We"ll be referencing this in the JavaScript. -->
+
                         <h3 id="word-blanks">_ _ _ _ _ _ _ _ _ </h3>
 
                     </div>
 
                 </div>
 
-                <!-- Second card: Holds the list of Wrong User Guesses. -->
-                <div class="card card-default">
-                    <div class="card-body">
+                <div class="stats">
 
-                        <!-- This span section called wrong-guesses is where we will be dumping the wrong guesses. Pay particular attention to the id called ****wrong-guesses***. We"ll be referencing this in the JavaScript. -->
-                        <strong>Wrong Guesses: </strong> <span id="wrong-guesses"></span>
+                    <div>
+                        <div>
 
-                    </div>
-                </div>
 
-                <!-- Third card: Holds the Number of Wrong Guesses. -->
-                <div class="card card-default">
-                    <div class="card-body">
+                            <strong>Wrong Guesses: </strong> <span id="wrong-guesses"></span>
 
-                        <!-- This span is where we"ll dump the number of guesses left. Pay attention to the id called ****guesses-left**** we"ll be referencing this in the JavaScript. -->
-                        <strong>Guesses Left: </strong> <span id="guesses-left">9</span>
-
+                        </div>
                     </div>
 
-                </div>
 
-                <!-- Fourth card: Holds the number of Wins. -->
-                <div class="card card-default">
+                    <div>
+                        <div>
 
-                    <div class="card-body">
 
-                        <!-- This span called win-counter is where we"ll be dumping the number of wins. Pay attention to the id called ****win-counter*** we"ll be referencing this in the JavaScript. -->
-                        <strong>Wins: </strong> <span id="win-counter">0</span>
+                            <strong>Guesses Left: </strong> <span id="guesses-left">9</span>
+
+                        </div>
 
                     </div>
 
-                </div>
 
-                <!-- Fifth card: Holds the number of Losses. -->
-                <div class="card card-default">
-                    <div class="card-body">
+                    <div class="card card-default">
 
-                        <!-- This span called loss-counter is where we"ll be dumping the number of losses. Pay attention to the id called ****loss-counter***; we"ll be referencing this in the JavaScript. -->
-                        <strong>Losses: </strong> <span id="loss-counter">0</span>
+                        <div class="card-body">
+
+
+                            <strong>Wins: </strong> <span id="win-counter">0</span>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <div>
+
+
+                            <strong>Losses: </strong> <span id="loss-counter">0</span>
+
+                        </div>
 
                     </div>
 
